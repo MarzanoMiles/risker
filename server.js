@@ -3,7 +3,7 @@ const mysql = require('mysql2/promise');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
@@ -11,8 +11,8 @@ app.use(express.json());
 
 // Database connection pool
 const pool = mysql.createPool({
-  host: 'mysql-production-fc6b.up.railway.app',
-  port: 3306,
+  host: 'shuttle.proxy.rlwy.net',
+  port: 38580,
   user: 'root',
   password: 'StzsTAbAQPgiBsUiSVDZhXahUOnnncQm',
   database: 'railway',
