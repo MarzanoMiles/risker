@@ -3,7 +3,7 @@ const mysql = require('mysql2/promise');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 
 // Middleware
 app.use(cors());
@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Database connection pool
 const pool = mysql.createPool({
-  host: 'caboose.proxy.rlwy.net',
+  host: 'shuttle.proxy.rlwy.net:',
   port: 38580,
   user: 'root',
   password: 'StzsTAbAQPgiBsUiSVDZhXahUOnnncQm',
