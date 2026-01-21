@@ -12,9 +12,9 @@ app.use(express.json());
 // Database connection pool
 const pool = mysql.createPool({
   host: 'caboose.proxy.rlwy.net',
-  port: 10385,
+  port: 38580,
   user: 'root',
-  password: 'plrItMbBMeUofaICIYtlMnDwSlyKLYnU',
+  password: 'StzsTAbAQPgiBsUiSVDZhXahUOnnncQm',
   database: 'railway',
   waitForConnections: true,
   connectionLimit: 10,
