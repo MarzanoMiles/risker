@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3300;
 // Middleware
 app.use(cors({
   origin: [
-    'https://cofee-may.web.app/'
+    'https://cofee-may.web.app'
   ],
   methods: ['GET', 'POST']
 }));
