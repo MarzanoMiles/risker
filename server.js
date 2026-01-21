@@ -12,7 +12,7 @@ app.use(express.json());
 // Database connection pool
 const pool = mysql.createPool({
   host: 'shuttle.proxy.rlwy.net',
-  port: 38580,
+  port: 3306,
   user: 'root',
   password: 'StzsTAbAQPgiBsUiSVDZhXahUOnnncQm',
   database: 'railway',
